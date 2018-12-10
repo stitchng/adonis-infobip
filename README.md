@@ -5,7 +5,7 @@ An addon/plugin package to provide InfoBip single/bulk SMS services in AdonisJS 
 ## Getting Started
 ```bash
 
-    npm i --save @stitchng/adonis-infobip
+    npm i --save @adonisjs/adonis-infobip
 
 ```
 
