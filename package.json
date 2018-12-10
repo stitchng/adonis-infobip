@@ -1,5 +1,5 @@
 {
-  "name": "@stitchng/adonis-infobip",
+  "name": "@adonisjs/adonis-infobip",
   "version": "0.1.1",
   "description": "InfoBip addon/plugin package for AdonisJS 4.0+ apps",
   "main": "index.js",
