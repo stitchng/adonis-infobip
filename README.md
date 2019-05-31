@@ -1,6 +1,7 @@
 # adonis-infobip
 
 An addon/plugin package to provide InfoBip single/bulk SMS services in AdonisJS 4.0+
+
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Coveralls][coveralls-image]][coveralls-url]
