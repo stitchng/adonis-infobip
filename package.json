@@ -21,6 +21,7 @@
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
+    "sms",
     "infobip",
     "adonis-addon",
     "adonisjs",
@@ -41,7 +42,7 @@
   "license": "MIT",
   "dependencies": {
     "@adonisjs/generic-exceptions":"^2.0.1",
-    "infobip-node":"^0.0.1",
+    "infobip-node":"^0.0.1"
   },
   "devDependencies": {
     "japa": "^2.0.5",
