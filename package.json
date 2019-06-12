@@ -1,17 +1,17 @@
 {
   "name": "adonisjs-infobip",
   "version": "0.1.1",
-  "description": "InfoBip addon/plugin package for AdonisJS 4.0+ apps",
+  "description": "An addon/plugin package to provide InfoBip single/bulk SMS/Voice services in AdonisJS 4.0+",
   "main": "index.js",
-  "files":[
+  "files": [
     "src",
     "config",
     "providers",
     "instructions.js",
     "instructions.md"
   ],
-  "directories":{
-    "test":"test"
+  "directories": {
+    "test": "test"
   },
   "scripts": {
     "lint": "standard",
@@ -22,6 +22,8 @@
   },
   "keywords": [
     "sms",
+    "tts",
+    "rest-api",
     "infobip",
     "adonis-addon",
     "adonisjs",
@@ -41,8 +43,8 @@
   "author": "StitchNG <stitchnig@gmail.com> (https://twitter.com/stitchappn)",
   "license": "MIT",
   "dependencies": {
-    "@adonisjs/generic-exceptions":"^2.0.1",
-    "infobip-node":"^0.0.1"
+    "@adonisjs/generic-exceptions": "^2.0.1",
+    "infobip-nodejs": "^0.0.1"
   },
   "devDependencies": {
     "japa": "^2.0.5",
@@ -50,9 +52,9 @@
     "nyc": "^13.0.1",
     "semver": "^5.5.0",
     "standard": "^12.0.1",
-    "@adonisjs/sink":"^1.0.6",
+    "@adonisjs/sink": "^1.0.6",
     "@adonisjs/fold": "^4.0.9"
-},
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stitchng/adonis-infobip.git"

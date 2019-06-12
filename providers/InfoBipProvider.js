@@ -8,8 +8,10 @@ class InfoBipProvider extends ServiceProvider {
       const Config = this.app.use('Adonis/Src/Config')
       const Env = this.app.use('Env')
       const InfoBipAPIClient = require('../src/InfoBip/index.js')
-      
-      return new InfoBipAPIClient(require('infobip-node'), Config, Env)
+
+      const client = new InfoBipAPIClient(require('infobip-nodejs'), Config, Env)
+
+      return client.agent
     })
 
     this.app.alias('Adonis/Addons/InfoBip', 'InfoBip')

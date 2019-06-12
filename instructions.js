@@ -13,6 +13,6 @@ const path = require('path')
 module.exports = async function (cli) {
   await cli.makeConfig('infobip.js', path.join(__dirname, './config/infobip.js'))
     .catch((e) => {})
-    
+
   cli.command.completed('create', 'config/infobip.js')
 }
