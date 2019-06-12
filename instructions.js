@@ -11,8 +11,10 @@
 const path = require('path')
 
 module.exports = async function (cli) {
-  await cli.makeConfig('infobip.js', path.join(__dirname, './config/infobip.js'))
-    .catch((e) => {})
-
-  cli.command.completed('create', 'config/infobip.js')
+  try {
+    await cli.makeConfig('infobip.js', path.join(__dirname, 'config/infobip.js'))
+    cli.command.completed('create', 'config/infobip.js')
+  } catch (error) {
+    // ignore if infobip.js already exists
+  }
 }
