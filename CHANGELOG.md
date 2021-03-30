@@ -1,5 +1,5 @@
 <a name="0.1.2"></a>
-# 0.1.2 2021-02-23)
+# 0.1.2 2021-03-30)
 
 ### Added Features
 - Update dependency **infobip-nodejs** (v0.0.1) -> (v0.0.2)
