@@ -1,6 +1,6 @@
 # adonis-infobip
 
-An addon/plugin package to provide InfoBip single/bulk SMS/Voice services in AdonisJS 4.0+
+An addon/plugin package to provide InfoBip single/bulk SMS/Voice/WebRTC services in AdonisJS 4.0+
 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -41,25 +41,29 @@ An addon/plugin package to provide InfoBip single/bulk SMS/Voice services in Ado
       }
       
       async sendOneSms({ request, response }){
-      
+
           let user = await this.user.find(1) // get user from database
 
           let response = await Infobip.sendSMS({
-              to: String(user.phone_number),
-              from:"MESSAGE-NG",
+            messages: [{
+              destinations: [{
+                to: String(user.phone_number)
+              }],
+              from:"MESSANGER-NG",
               text:`Hello ${user.full_name}, Happy birthday!`
+            }]
           })
-          
+
           console.log("Bulk ID: ", response.body.bulkId)
-          
+
           return response.status(200).json({
-             data:response.body
+            status: 'success',
+            data: `Message sent to ${user.full_name}`
           })
       }
   }
   
   module.exports = MessageController
-
 ```
 
 ## License

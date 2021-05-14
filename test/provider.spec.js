@@ -1,7 +1,7 @@
 'use strict'
 
 /*
- * adonis-flutterwave
+ * adonis-infobip
  *
  * (c) Harminder Virk <virk@adonisjs.com>
  *
@@ -20,11 +20,12 @@ test.group('AdonisJS InfoBipProvider Test(s)', (group) => {
   group.beforeEach(() => {
     ioc.bind('Adonis/Src/Config', () => {
       let config = new Config()
-      config.set('infobip.encrypted', true)
+      config.set('infobip.encrypted', false)
       config.set('infobip.authType', 'basic')
       config.set('infobip.username', 'regency')
       config.set('infobip.password', '_38399abci')
       config.set('infobip.apiKey', 'YWdJm94f8a309e09349ebc8e4eC')
+      config.set('infobip.baseUrl', 'okllqa.api.infobip.com')
 
       return config
     })
@@ -45,8 +46,7 @@ test.group('AdonisJS InfoBipProvider Test(s)', (group) => {
     InfoBipInstance = ioc.use('Adonis/Addons/InfoBip')
 
     assert.isTrue(typeof InfoBipInstance.sendSMS === 'function')
-    assert.isTrue(typeof InfoBipInstance.sendSMSBulk === 'function')
+    assert.isTrue(typeof InfoBipInstance.sendSMSBinary === 'function')
     assert.isTrue(typeof InfoBipInstance.sendVoice === 'function')
-    assert.isTrue(typeof InfoBipInstance.sendVoiceBulk === 'function')
   })
 })
