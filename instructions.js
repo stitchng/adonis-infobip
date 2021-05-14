@@ -5,7 +5,8 @@
  *
  * @license MIT
  * @copyright Slynova - Romain Lanz <romain.lanz@slynova.ch>
- * @extended Oparand - Ifeora Okechukwu <isocroft@gmail.com> | Aziz Abdul <>
+ * @extended Oparand - Ifeora Okechukwu <isocroft@gmail.com>
+ *                     Ahmad Abdul-Aziz <ahmad.abdulaziz37@gmail.com>
  */
 
 const path = require('path')

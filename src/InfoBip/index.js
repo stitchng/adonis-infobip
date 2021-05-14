@@ -9,6 +9,15 @@ const decorator = {
     if (property === 'restore') {
       return construct['disengageMock'].bind(construct)
     }
+    if (property === 'withError') {
+      return construct['respondWithError'].bind(construct)
+    }
+    if (property === 'withoutError') {
+      return construct['respondWithoutError'].bind(construct)
+    }
+    if (property === 'mockMacro') {
+      return construct['mockMacro'].bind(construct)
+    }
     if (property === 'disengageMock' || property === 'engageMock') {
       return undefined
     }
