@@ -12,7 +12,7 @@ module.exports = {
   |
   |
   */
-  encrypted: true,
+  encrypted: false,
 
   /*
   |--------------------------------------------------------------------------
@@ -51,7 +51,9 @@ module.exports = {
   |---------------------------------------------------------------------------
   |
   | This refers to the authorization type used to access the API service.
-  | two options: basic, app
+  | two options: 
+  |
+  | basic, key
   |
   */
   authType: Env.get('INFOBIP_AUTH_TYPE', 'basic'),

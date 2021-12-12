@@ -50,6 +50,11 @@ class InfoBipApiClient {
       baseHost: Config.get('infobip.baseUrl')
     })
 
+    /* @HINT: 
+            Here i make use of JavaScript proxy to access the mock interface using an adapter similar to that
+            exposed by AdonisJS in it's service objects. using 'fake()' and 'restore()'
+    */
+    /* @CHECK: For more info on JavaScript proxy, See: https://www.javascripttutorial.net/es6/javascript-proxy/ */
     return new Proxy(agent, decorator)
   }
 }
