@@ -1,6 +1,6 @@
 {
   "name": "adonisjs-infobip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An addon/plugin package to provide InfoBip single/bulk SMS/Voice services in AdonisJS 4.0+",
   "main": "index.js",
   "files": [
@@ -45,7 +45,7 @@
   "license": "MIT",
   "dependencies": {
     "@adonisjs/generic-exceptions": "^2.0.1",
-    "infobip-nodejs": "^0.1.0-alpha.1"
+    "infobip-nodejs": "^0.1.0"
   },
   "devDependencies": {
     "japa": "^2.0.5",
