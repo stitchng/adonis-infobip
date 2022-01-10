@@ -3,6 +3,13 @@
 const { ServiceProvider } = require('@adonisjs/fold')
 
 class InfoBipProvider extends ServiceProvider {
+  /**
+   * Register the API wrapper to the IoC
+   *
+   * @method register
+   *
+   * @return {void}
+   */
   register () {
     this.app.singleton('Adonis/Addons/InfoBip', () => {
       const Config = this.app.use('Adonis/Src/Config')
