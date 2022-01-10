@@ -8,7 +8,7 @@ module.exports = {
   | Using SSL ?
   |---------------------------------------------------------------------------
   |
-  |
+  | Whether or not the API request should be encrypted vis SSL
   |
   |
   */
@@ -19,7 +19,7 @@ module.exports = {
   | Username
   |--------------------------------------------------------------------------
   |
-  |
+  | The username of the infobip portal dashboad account
   |
   */
   username: Env.get('INFOBIP_USERNAME'),
@@ -29,7 +29,7 @@ module.exports = {
   | Password
   |--------------------------------------------------------------------------
   |
-  |
+  | The password of the infobip portal dashboad account
   |
   */
   password: Env.get('INFOBIP_PASSWORD'),
@@ -39,7 +39,7 @@ module.exports = {
   | Api Key
   |---------------------------------------------------------------------------
   |
-  | This refers to the API key from the dashboard
+  | This refers to the API key from the infobip protal dashboard account
   |
   |
   */
@@ -51,7 +51,7 @@ module.exports = {
   |---------------------------------------------------------------------------
   |
   | This refers to the authorization type used to access the API service.
-  | two options: 
+  | two options:
   |
   | basic, key
   |

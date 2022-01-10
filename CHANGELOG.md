@@ -1,5 +1,5 @@
 <a name="1.0.1"></a>
-# 1.0.1 2021-12-15)
+# 1.0.1 (2022-01-10)
 
 ### Added Features
 - Update dependency **infobip-nodejs** (v0.1.0-alpha.1) -> (v0.1.0)
@@ -7,7 +7,7 @@
 - Fix SMS Delivery endpoint error
 
 <a name="1.0.0"></a>
-# 1.0.0 2021-05-14)
+# 1.0.0 (2021-05-14)
 
 ### Added Features
 - Breaking changes due to API documentation updates
@@ -16,7 +16,7 @@
 - None
 
 <a name="0.1.2"></a>
-# 0.1.2 2021-03-30)
+# 0.1.2 (2021-03-30)
 
 ### Added Features
 - Update dependency **infobip-nodejs** (v0.0.1) -> (v0.0.2)
