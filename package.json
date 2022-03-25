@@ -46,7 +46,7 @@
   "dependencies": {
     "@adonisjs/generic-exceptions": "^2.0.1",
     "debug": "^3.1.2",
-    "infobip-nodejs": "^0.1.0"
+    "infobip-nodejs": "^0.1.1"
   },
   "devDependencies": {
     "japa": "^2.0.5",
